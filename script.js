@@ -2,6 +2,9 @@
 // JSX => Javascript HTML ot Javscript XML
 // a way to insert HTML into JS code
 
+// To inject anything in JSX, use {}
+// {} can be used to inject HTML components, CSS styles, attribute values, text content, comments
+
 const root = document.getElementById("root");
 
 // CSS properties will be in the form of key-value pairs
@@ -20,6 +23,8 @@ const user = "Nitin Gupta";
 const year = 2022;
 
 // HTML components
+
+// Navbar
 const Navbar = (
   <ul style={css_ul}>
     <li>
@@ -45,6 +50,7 @@ const Navbar = (
   </ul>
 );
 
+// Hero section
 const Hero = (
   <div style={css_div}>
     <h2 style={css_h2}>Hero section</h2>
@@ -57,10 +63,11 @@ const Hero = (
   </div>
 );
 
+// Main section
 const Main = (
   <div style={css_div}>
     <h2 style={css_h2}>Main Section</h2>
-    {/* class is a reserved keyword in JS, hence use className */}
+    {/* class is a reserved keyword in JS, so we use className */}
     <p className="text">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
       doloremque reprehenderit rerum nulla fugiat adipisci ratione. Quidem
@@ -69,6 +76,7 @@ const Main = (
   </div>
 );
 
+// Footer
 const Footer = (
   <div style={css_div}>
     <p className="footer-text">
@@ -77,8 +85,7 @@ const Footer = (
   </div>
 );
 
-// To inject anything in JSX, use {}
-/* all the components will be inside App function */
+/* all the components will be inside App */
 const App = (
   <>
     {/* Components are reusable */}
